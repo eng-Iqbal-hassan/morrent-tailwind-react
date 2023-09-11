@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .full-width {
+    width: -webkit-fill-available;
+  }
+  .custom-font {
+    font-family: "Plus Jakarta Sans" !important;
+  }
+  .max-container {
+    max-width: 1312px;
+    margin: 0 auto;
+  }
+  .custom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 327px);
+    justify-content: space-between;
+    grid-gap: 32px;
+  }
+  @media screen and (min-width: 640px) {
+    .custom-grid {
+      grid-template-columns: repeat(auto-fill, 260px);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .custom-grid {
+      grid-template-columns: repeat(auto-fill, 304px);
+    }
+  }
+}
