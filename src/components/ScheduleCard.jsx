@@ -1,14 +1,12 @@
 import React from "react";
-import { PickUp } from "../assets/icons";
 import Dropdown from "./Dropdown";
-
-const ScheduleCard = () => {
+const ScheduleCard = ({ text, source }) => {
   return (
     <div className="bg-[#FFFFFF] p-4 lg:px-12 lg:py-6 rounded-[10px] md:full-width">
       <div className="flex items-center gap-2 mb-6">
-        <PickUp />
+        <img src={`${source}`} alt="" />
         <h4 className="text-base font-semibold -tracking-[0.02em] text-[#1A202C]">
-          Pick - Up
+          {text}
         </h4>
       </div>
       <ul className="flex justify-between">

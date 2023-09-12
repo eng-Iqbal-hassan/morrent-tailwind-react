@@ -7,11 +7,11 @@ import "swiper/css/pagination";
 const PopularCar = () => {
   return (
     <section className="2xl:w-[1312px] ml-6 2xl:mx-auto mb-8">
-      <div className="flex items-center justify-between">
-        <span className="text-base font-semibold leading-normal text-[#90A3BF] px-5 py-[10px]">
+      <div className="flex items-center justify-between mr-6 mb-5">
+        <span className="text-sm md:text-base font-semibold leading-[21px] md:leading-6 text-[#90A3BF] md:px-5 md:py-[10px]">
           Popular Car
         </span>
-        <button className="bg-transparent border-none text-[#3563E9] text-base font-semibold px-5 py-[10px]">
+        <button className="bg-transparent border-none text-[#3563E9] text-xs leading-[15.12px] md:text-base font-semibold md:px-5 md:py-[10px]">
           View All
         </button>
       </div>
@@ -21,10 +21,9 @@ const PopularCar = () => {
         loop={true}
         className="mySwiper"
       >
-        {popularCars.map(popularCars => (
-          <SwiperSlide className="w-[240px]">
+        {popularCars.map((popularCars, index) => (
+          <SwiperSlide key={index} className="w-[240px] md:w-[304px]">
             <PopularCarsCard
-              key={popularCars.name}
               name={popularCars.name}
               type={popularCars.type}
               rating={popularCars.rating}

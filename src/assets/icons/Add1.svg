@@ -13,7 +13,7 @@
           r="25"
           stroke="white"
           stroke-opacity="0.06"
-          stroke-width="10"
+          strokeWidth="10"
         />
         <circle
           cx="230"
@@ -21,7 +21,7 @@
           r="75"
           stroke="white"
           stroke-opacity="0.06"
-          stroke-width="20"
+          strokeWidth="20"
         />
         <circle
           cx="230.5"
@@ -29,7 +29,7 @@
           r="137.5"
           stroke="white"
           stroke-opacity="0.06"
-          stroke-width="20"
+          strokeWidth="20"
         />
         <circle
           cx="230"
@@ -37,7 +37,7 @@
           r="200"
           stroke="white"
           stroke-opacity="0.06"
-          stroke-width="20"
+          strokeWidth="20"
         />
         <circle
           cx="230.5"
@@ -45,7 +45,7 @@
           r="262.5"
           stroke="white"
           stroke-opacity="0.06"
-          stroke-width="20"
+          strokeWidth="20"
         />
         <circle
           cx="230"
@@ -53,7 +53,7 @@
           r="325"
           stroke="white"
           stroke-opacity="0.06"
-          stroke-width="20"
+          strokeWidth="20"
         />
         <circle
           cx="230.5"
@@ -61,7 +61,7 @@
           r="387.5"
           stroke="white"
           stroke-opacity="0.06"
-          stroke-width="20"
+          strokeWidth="20"
         />
       </g>
       <defs>

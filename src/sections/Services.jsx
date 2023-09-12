@@ -11,6 +11,7 @@ const Services = () => {
           text={data.text}
           imgURL={data.imgURL}
           bgURL={data.bgURL}
+          btnBg={data.btnBg}
         />
       ))}
     </section>
