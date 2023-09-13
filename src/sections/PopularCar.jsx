@@ -6,12 +6,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 const PopularCar = () => {
   return (
-    <section className="2xl:w-[1312px] ml-6 2xl:mx-auto mb-8">
-      <div className="flex items-center justify-between mr-6 mb-5">
+    <div className="2xl:w-[1312px] ml-6 2xl:mx-auto mb-8">
+      <div className="flex items-center justify-between mr-6 mb-5 2xl:mr-0">
         <span className="text-sm md:text-base font-semibold leading-[21px] md:leading-6 text-[#90A3BF] md:px-5 md:py-[10px]">
           Popular Car
         </span>
-        <button className="bg-transparent border-none text-[#3563E9] text-xs leading-[15.12px] md:text-base font-semibold md:px-5 md:py-[10px]">
+        <button className="bg-transparent border-none text-[#3563E9] text-xs leading-[15.12px] md:text-base font-semibold md:px-5 md:py-[10px] cursor-pointer">
           View All
         </button>
       </div>
@@ -41,7 +41,7 @@ const PopularCar = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </div>
   );
 };
 

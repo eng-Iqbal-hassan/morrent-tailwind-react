@@ -9,7 +9,7 @@ const ScheduleCard = ({ text, source }) => {
           {text}
         </h4>
       </div>
-      <ul className="flex justify-between">
+      <ul className="flex justify-between custom-line">
         <li>
           <Dropdown text="Locations" description="Semarang" />
         </li>

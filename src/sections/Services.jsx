@@ -3,7 +3,7 @@ import ServicesCards from "../components/ServicesCards";
 import { servicesData } from "../constants";
 const Services = () => {
   return (
-    <section className="flex mx-6 gap-6 2xl:max-container justify-between absolute top-[172px] z-10 full-width md:static">
+    <div className="flex mx-6 gap-6 2xl:max-container justify-between absolute top-[172px] z-10 full-width md:static">
       {servicesData.map(data => (
         <ServicesCards
           key={data.heading}
@@ -14,7 +14,7 @@ const Services = () => {
           btnBg={data.btnBg}
         />
       ))}
-    </section>
+    </div>
   );
 };
 

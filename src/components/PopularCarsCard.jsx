@@ -27,7 +27,9 @@ const PopularCarsCard = ({
             {type}
           </span>
         </div>
-        <img src={rating} alt="rating" width={24} height={24} />
+        <button className="cursor-pointer">
+          <img src={rating} alt="rating" width={24} height={24} />
+        </button>
       </div>
       <div className="mt-[32px] mb-[44px] flex justify-center items-center md:my-16">
         <img
