@@ -29,4 +29,63 @@
       grid-template-columns: repeat(auto-fill, 304px);
     }
   }
+  .custom-line {
+    position: relative;
+  }
+  .custom-line::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #c3d4e966;
+    left: 32%;
+    top: 0;
+  }
+  .custom-line::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #c3d4e966;
+    right: 26%;
+    top: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    .custom-line::after {
+      left: 29%;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .custom-line::before {
+      right: 24%;
+    }
+  }
+  input:focus {
+    outline: none;
+  }
+  input::-webkit-search-cancel-button {
+    /* padding-right: 30px;  */
+    /* Adjust the padding to make room for the custom button */
+    /* Remove the default appearance */
+    appearance: none;
+    -webkit-appearance: none; /* For older WebKit browsers */
+  }
+
+  /* Insert the custom icon using ::after pseudo-element when the input is not empty */
+  input:not(:empty)::after {
+    /* content: url('path_to_your_custom_cross_icon.png'); */
+    /* Replace with your custom icon's path */
+    content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.44 3.1C14.63 3.1 13.01 3.98 12 5.33C10.99 3.98 9.37 3.1 7.56 3.1C4.49 3.1 2 5.6 2 8.69C2 9.88 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.88 22 8.69C22 5.6 19.51 3.1 16.44 3.1Z' fill='%23ED3F3F'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust the right positioning as needed */
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.5; /* Adjust the opacity as needed */
+  }
+
+  /* Hide the default clear button */
+  /* input::-webkit-search-cancel-button {
+    display: none;
+  } */
 }

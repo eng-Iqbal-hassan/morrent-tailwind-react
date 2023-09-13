@@ -3,7 +3,7 @@ import { recommendedCars } from "../constants";
 import CarsListing from "../components/CarsListing";
 const RecommendedCars = () => {
   return (
-    <section className="2xl:w-[1312px] max-w-[327px]  sm:max-w-[570px] md:max-w-[700px] lg:max-w-[976px] 2xl:max-w-[1312px]  mx-auto 2xl:mx-auto mb-16">
+    <div className="2xl:w-[1312px] max-w-[327px]  sm:max-w-[570px] md:max-w-[700px] lg:max-w-[976px] 2xl:max-w-[1312px]  mx-auto 2xl:mx-auto mb-16">
       <span className="text-sm md:text-base font-semibold leading-[21px] md:leading-6 text-[#90A3BF] md:px-5 md:py-[10px]">
         Recomendation Car
       </span>
@@ -35,7 +35,7 @@ const RecommendedCars = () => {
           120 Car
         </span>
       </div>
-    </section>
+    </div>
   );
 };
 

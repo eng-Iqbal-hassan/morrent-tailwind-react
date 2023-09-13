@@ -18,7 +18,7 @@ const ServicesCards = ({ heading, text, imgURL, btnBg, bgURL }) => {
       >
         Rental Car
       </button>
-      <div className="flex justify-center mt-[26px] 2xl:mt-[0] 2xl:relative 2xl:bottom-3">
+      <div className="flex justify-center mt-[26px] 2xl:mt-[0] 2xl:relative 2xl:bottom-3 2xl:justify-end 2xl:right-[73px]">
         <img
           src={imgURL}
           alt="icon"

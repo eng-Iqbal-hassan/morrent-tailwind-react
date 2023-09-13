@@ -27,11 +27,13 @@ const CarsListing = ({
             {type}
           </span>
         </div>
-        <img
-          src={rating}
-          alt="rating"
-          className="w-[16px] h-[16px] md:w-[24px] md:h-[24px]"
-        />
+        <button className="cursor-pointer">
+          <img
+            src={rating}
+            alt="rating"
+            className="w-[16px] h-[16px] md:w-[24px] md:h-[24px]"
+          />
+        </button>
       </div>
       <div className="flex items-end justify-end mt-3 mb-[34px] md:mt-[50px] md:mb-6 gap-[50px] sm:flex-col sm:items-center sm:gap-5 md:gap-11">
         <div>
